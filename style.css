@@ -1,0 +1,59 @@
+* {
+  border: 0px dashed blue;
+}
+html {
+  position: relative;
+  min-height: 100%;
+  letter-spacing: 1.5px;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: "Times New Roman"; 
+}
+.container {
+  width: 100%;
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 40px;
+}
+nav {
+  border-bottom: 1px solid #F5F5F5;
+}
+.modal-dialog {
+  width: 500px;
+  margin: 200px auto;
+}
+.herotext {
+  font-size: 52px;
+  margin-top: 150px;
+}
+.herotext, .sign-up-btn {
+  margin-left: 100px;
+}
+.login-menu {
+  border-left: 1px solid #F5F5F5;
+  position: relative;
+}
+.login-btn, .sign-up-btn {
+  font-size: 18px;
+}
+.login-btn {
+  padding-top: 10px;
+  padding-left: 10px;
+  margin-bottom: 25px;
+  color: #134AC0;
+}
+.sign-up-btn {
+  padding: 7px 35px;
+  background-color: transparent;
+  border: 3px solid #1C3451;
+}
