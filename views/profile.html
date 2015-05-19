@@ -1,10 +1,41 @@
 <div class="container">
 
+  <script type="text/ng-template" id="customTemplate.html">
+  <a>
+      <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="50">
+      <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
+  </a>
+</script>
+
  <nav> 
   <div class="row">
-    Test
+      <div class='col-md-2'>
+        <h1 class="logo-profile">Mark</h1>  
+      </div>
+      <div class='col-md-8' ng-controller="profileCtrl">
+        <input class="search-bar" type="text" ng-model="customSelected" placeholder="Search movies to add to your list…" typeahead="state as state.name for state in statesWithFlags | filter:{name:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control"> 
+      </div>
+      <div class='col-md-2 login-menu'>
+        <h1 class="login-btn">User Name</h1>    
+      </div>
   </div> <!-- end of row -->
- </nav>   
+ </nav>
+
+ <div class="row">
+  <div class='col-md-12' ng-controller="profileCtrl">
+    <tabset>
+      <tab heading="Movies to Watch">
+        Static content
+      </tab>
+      <tab heading="Movies I've Seen">
+        Static title
+      </tab>
+      <tab heading="Movies I Reccomend ">
+        Static content
+      </tab>
+    </tabset> 
+  </div>
+</div> <!-- end of row --> 
 
 
 
