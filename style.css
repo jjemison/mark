@@ -44,7 +44,7 @@ nav {
   letter-spacing: 1.5px
 }
 .top-marketing-text {
-  margin-top: 125px;
+  margin-top: 115px;
   font-weight: bold;
 }
 .login-menu {
@@ -55,6 +55,8 @@ nav {
   text-align: center;
   padding-top: 7px;
   margin-bottom: 25px;
+}
+.login-btn, .top-marketing-text {
   color: #134AC0;
 }
 .login-btn, .sign-up-btn {
