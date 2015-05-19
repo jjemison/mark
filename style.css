@@ -28,32 +28,67 @@ body {
 nav {
   border-bottom: 1px solid #F5F5F5;
 }
+.logo {
+  font-family: "Jaapokki-regular"
+}
 .modal-dialog {
   width: 500px;
   margin: 200px auto;
 }
-.herotext {
-  font-size: 52px;
-  margin-top: 150px;
+.marketing-panel {
+  max-width: 960px;
+  margin: 0 auto; 
 }
-.herotext, .sign-up-btn {
-  margin-left: 100px;
+.top-marketing-text, .bottom-marketing-text {
+  font-size: 67px;
+  letter-spacing: 1.5px
+}
+.top-marketing-text {
+  margin-top: 125px;
+  font-weight: bold;
 }
 .login-menu {
   border-left: 1px solid #F5F5F5;
   position: relative;
 }
+.login-btn {
+  text-align: center;
+  padding-top: 7px;
+  margin-bottom: 25px;
+  color: #134AC0;
+}
 .login-btn, .sign-up-btn {
   font-size: 18px;
 }
-.login-btn {
-  padding-top: 10px;
-  padding-left: 10px;
-  margin-bottom: 25px;
-  color: #134AC0;
+.top-spacing {
+  margin-top:40px;
 }
 .sign-up-btn {
   padding: 7px 35px;
   background-color: transparent;
   border: 3px solid #1C3451;
+}
+.site-credits {
+  float: right;
+  margin-right: 30px;
+}
+.sign-up-form {
+  margin-top: 30px;
+}
+.sign-up-input {
+  border: 3px solid #F5F5F5;
+  height: 35px;
+  width: 180px;
+  padding-left: 10px;
+}
+.sign-up-input:focus, .login-sign-up-btn {
+  outline: 2px solid #134AC0;
+}
+.sign-up-btn:focus {
+  outline: none;
+}
+.login-sign-up-btn {
+  background-color: transparent;
+  padding: 5px 25px;
+  margin-left: 20px;
 }
