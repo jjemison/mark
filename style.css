@@ -18,22 +18,22 @@ body {
 .row {
   margin: 0;
 }
+.test1 {
+  height: 100vh;
+}
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 40px;
+  height: 50px;
 }
 nav {
   border-bottom: 1px solid #F5F5F5;
+  background-color: #fff;
 }
 .logo {
   font-family: "Jaapokki-regular"
-}
-.modal-dialog {
-  width: 500px;
-  margin: 200px auto;
 }
 .marketing-panel {
   max-width: 960px;
@@ -44,7 +44,7 @@ nav {
   letter-spacing: 1.5px
 }
 .top-marketing-text {
-  margin-top: 115px;
+  margin-top: 180px;
   font-weight: bold;
 }
 .login-menu {
@@ -75,7 +75,7 @@ nav {
   margin-right: 30px;
 }
 .sign-up-form {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 .sign-up-input {
   border: 3px solid #F5F5F5;
@@ -93,6 +93,7 @@ nav {
   background-color: transparent;
   padding: 5px 25px;
   margin-left: 20px;
+  color: #134AC0;
 }
 .search-bar {
   width: 100%;
@@ -116,10 +117,12 @@ nav {
 .nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
   border: 0;
   border-bottom: 1px solid #134AC0;
+  color: #134AC0;
 }
 .nav-tabs>li>a:hover {
   border-color: transparent;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid #16d4d9;
+  color: #16d4d9;
 }
 .nav-tabs>li>a {
   border: 0;
@@ -128,10 +131,10 @@ nav {
   background-color: transparent;
 }
 .nav-tabs > li, .nav-pills > li {
-    float:none;
-    display:inline-block;
-    *display:inline; /* ie7 fix */
-     zoom:1; /* hasLayout ie7 trigger */
+  float:none;
+  display:inline-block;
+  *display:inline; /* ie7 fix */
+   zoom:1; /* hasLayout ie7 trigger */
 }
 .nav-tabs, .nav-pills {
     text-align:center;
@@ -140,6 +143,39 @@ nav {
   text-align: center;
   margin-top: 20px;
 }
+.test3 {
+  text-align: center;
+  height: 650px;
+  background-color: #2F466B;
+  color: #fff;
+}
+.learn-more-text, .button-singup {
+  text-align: center;
+  margin-top: 40px;
+}
+.carousel {
+  margin-top: 30px;
+}
+.carousel-control.left, .carousel-control.right {
+  background-image: none;
+}
+.carousel-control {
+  width: 45%;
+}
+.carousel-indicators {
+  bottom: -37px;
+}
+.button-singup {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.demo {
+  margin-top: 30px;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
 
 
 
