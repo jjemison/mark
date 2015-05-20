@@ -113,3 +113,33 @@ nav {
 .nav-tabs {
   border-bottom: 1px solid #F5F5F5;
 }
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+  border: 0;
+  border-bottom: 1px solid #134AC0;
+}
+.nav-tabs>li>a:hover {
+  border-color: transparent;
+  border-bottom: 1px solid red;
+}
+.nav-tabs>li>a {
+  border: 0;
+}
+.nav>li>a:hover {
+  background-color: transparent;
+}
+.nav-tabs > li, .nav-pills > li {
+    float:none;
+    display:inline-block;
+    *display:inline; /* ie7 fix */
+     zoom:1; /* hasLayout ie7 trigger */
+}
+.nav-tabs, .nav-pills {
+    text-align:center;
+}
+.tab-content>.active {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+

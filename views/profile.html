@@ -1,11 +1,11 @@
 <div class="container">
 
   <script type="text/ng-template" id="customTemplate.html">
-  <a>
+    <a>
       <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="50">
       <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
-  </a>
-</script>
+    </a>
+  </script>
 
  <nav> 
   <div class="row">
@@ -24,14 +24,14 @@
  <div class="row">
   <div class='col-md-12' ng-controller="profileCtrl">
     <tabset>
-      <tab heading="Movies to Watch">
-        Static content
+      <tab class="test" heading="Movies to Watch">
+        All the movies I want to watch will go here
       </tab>
       <tab heading="Movies I've Seen">
-        Static title
+       All the movies I want to see will go here
       </tab>
       <tab heading="Movies I Reccomend ">
-        Static content
+       All the movies I recommend will go here
       </tab>
     </tabset> 
   </div>
