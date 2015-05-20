@@ -126,6 +126,7 @@ nav {
 }
 .nav-tabs>li>a {
   border: 0;
+  color: #134AC0;
 }
 .nav>li>a:hover {
   background-color: transparent;
@@ -174,6 +175,10 @@ nav {
   font-size: 20px;
   text-transform: uppercase;
   color: #fff;
+}
+.dropdown-menu {
+  left: 20px;
+  border: 0;
 }
 
 

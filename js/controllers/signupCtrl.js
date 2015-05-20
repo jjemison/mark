@@ -1,6 +1,7 @@
 var app = angular.module('mark');
 
 app.controller('signupCtrl', function($scope){
+
   $scope.myInterval = 3000;
   var slides = $scope.slides = [];
   $scope.addSlide = function() {
@@ -11,5 +12,6 @@ app.controller('signupCtrl', function($scope){
   };
   for (var i=0; i<3; i++) {
     $scope.addSlide();
-  } 
+  }
+  
 });
