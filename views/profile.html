@@ -1,26 +1,23 @@
-<div class="container">
-
-  <script type="text/ng-template" id="customTemplate.html">
-    <a>
-      <img ng-src="http://upload.wikimedia.org/wikipedia/commons/thumb/{{match.model.flag}}" width="50">
-      <span bind-html-unsafe="match.label | typeaheadHighlight:query"></span>
-    </a>
-  </script>
+<div class="container" ng-controller="profileCtrl">
 
  <nav> 
   <div class="row">
       <div class='col-md-2'>
         <h1 class="logo-profile">Mark</h1>  
       </div>
-      <div class='col-md-8' ng-controller="profileCtrl">
-        <input class="search-bar" type="text" ng-model="customSelected" placeholder="Search movies to add to your list…" typeahead="state as state.name for state in statesWithFlags | filter:{name:$viewValue}" typeahead-template-url="customTemplate.html" class="form-control"> 
+      <div class='col-md-8'>
+        <input class="search-bar" type="text" 
+          placeholder="Search movies to add to your list…"
+          ng-model="search"
+          ng-change="change()"
+          onclick="select()" autofocus/> 
       </div>
       <div class='col-md-2 login-menu'>
         <span class="dropdown" dropdown on-toggle="toggled(open)">
           <h1 href class="login-btn" dropdown-toggle>
             User Name <span class="caret"></span>
           </h1>
-          <ul class="dropdown-menu">
+          <ul class="dropdown-menu" aria-labelledby="drop3">
             <li><a>Settings</a></li>
             <li><a>Log Out</a></li>
           </ul>
@@ -29,11 +26,67 @@
   </div> <!-- end of row -->
  </nav>
 
+
+
+    <div id="main-info" class="col-md-8">
+      <div ng-if="!details">
+        Loading results...
+      </div>
+
+      <div ng-if="details.Response==='True'">
+        <span class="span-outer">
+          <h3>{{ details.Title }} ({{ details.Year }})</h3>
+        </span>
+        <p>
+          <a class="btn" ng-click="addMovie()">To Watch</a>
+          <a class="btn">Seen</a>
+          <a class="btn">Recommend</a>
+        </p>
+      </div>   
+    </div>
+
+    <div id="related-results" class="col-md-4">
+      <div ng-if="related.Response!=='False'">
+        Related Results:
+        <ul class="rel-results">
+          <li ng-repeat="movie in related.Search">
+            <a ng-click="update(movie)">{{ movie.Title }}</a>, {{ movie.Year }}
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
  <div class="row">
-  <div class='col-md-12' ng-controller="profileCtrl">
+  <div class='col-md-12'>
     <tabset>
-      <tab class="test" heading="Movies to Watch">
-        All the movies I want to watch will go here
+      <tab class="test" heading="Movies to Watch"> 
+
+        <div ng-repeat="movie in want">
+         <img ng-src="{{ details.Poster=='N/A' ? 'http://placehold.it/150x220&text=N/A' : 'http://imdb.wemakesites.net/api/1.0/img/?url='+details.Poster }}" class="thumbnail">
+
+        <span class="span-outer">
+          <h3>{{ details.Title }} ({{ details.Year }})</h3>
+        </span>
+          
+        </span>
+          
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
       </tab>
       <tab heading="Movies I've Seen">
        All the movies I want to see will go here

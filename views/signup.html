@@ -33,49 +33,38 @@
           <input class="sign-up-input" type="text" placeholder="Last name">
           <input class="sign-up-input" type="text" placeholder="Email">
           <input class="sign-up-input" type="password" placeholder="Password">
-          <button class="login-sign-up-btn">Login</button>
+          <button class="login-sign-up-btn" ng-click"/profile">Login</button>
         </form>
       </div>
     </div> <!-- end of row -->
 
     <div class="row learn-more-text">
       <div class="col-md-12">
-        <h4>Learn More</h4>
+        <h5>Scroll to Learn More</h5>
+        <span class="glyphicon glyphicon-chevron-down"></span>
       </div>
     </div> <!-- end of row -->
   </div>  
 
    <div class="row test3">
-    <div class="col-md-12 top-spacing">
-      <h3>Making it Dead Simple to Save Movies</h3>
-      <p>Let Mark help you stay organized by allowing you to track the movies<br> you want to see, have seen, and recommend.</p>
-      <div ng-controller="signupCtrl">
-        <div>
-          <carousel interval="myInterval">
-            <slide ng-repeat="slide in slides" active="slide.active">
-              <img ng-src="{{slide.image}}" style="margin:auto;">
-            </slide>
-          </carousel>
-        </div>
+    <div class="col-md-12 lm-top-spacing">
+      <h2 class="lm-h">Making it Dead Simple to Save Movies</h2>
+      <p class="lm-p">Let Mark help you stay organized by allowing you to track the movies<br> you want to see, have seen, and recommend.</p>
+      <form class="lm-sign-up-form">
+        <input class="lm-sign-up-input" type="text" placeholder="First name">
+        <input class="lm-sign-up-input" type="text" placeholder="Last name">
+        <input class="lm-sign-up-input" type="text" placeholder="Email">
+        <input class="lm-sign-up-input" type="password" placeholder="Password">
+        <button class="lm-login-sign-up-btn">Login</button>
+      </form>
+      <div class="demo-top">
+        <a href="#" class="demo">See Mark in Action</a>
       </div>
-      <a href="#"><h3 class="demo">Demo<h3></a>
+      
     </div>
   </div> <!-- end of row -->
 
-   <div class="row button-singup">
-      <div class="col-md-12">
-        <h4>Sign Up Now</h4>
-        <form class="sign-up-form">
-          <input class="sign-up-input" type="text" placeholder="First name">
-          <input class="sign-up-input" type="text" placeholder="Last name">
-          <input class="sign-up-input" type="text" placeholder="Email">
-          <input class="sign-up-input" type="password" placeholder="Password">
-          <button class="login-sign-up-btn">Login</button>
-        </form>
-      </div>
-    </div> <!-- end of row -->
-  </div> 
-  <hr> 
+
 
 
 
